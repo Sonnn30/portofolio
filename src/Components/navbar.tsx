@@ -31,10 +31,10 @@ export default function Navbar() {
                     <a href="#contact" className="underline decoration-transparent hover:decoration-black decoration-2 transition duration-400">Contact</a>
                     <h3 className="text-[20px] font-semibold mt-30 border-b w-full py-1">Links</h3>
                     <div className="flex text-[18px] gap-3 mt-3">
-                        <a href="">LinkedIn</a>
-                        <a href="">Github</a>
-                        <a href="">Email</a>
-                        <a href="">Instagram</a>
+                        <a href="https://www.linkedin.com/in/wilson-prajnawira/" className="hover:underline decoration-black decoration-1">LinkedIn</a>
+                        <a href="https://github.com/Sonnn30" className="hover:underline decoration-black decoration-1">Github</a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=wilsonprajnawira345@gmail.com" className="hover:underline decoration-black decoration-1">Email</a>
+                        <a href="https://www.instagram.com/wilson_.p/" className="hover:underline decoration-black decoration-1">Instagram</a>
                     </div>
                 </div>
             </motion.div>
