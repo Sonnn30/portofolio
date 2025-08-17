@@ -8,7 +8,7 @@ import { sendEmail } from "@/lib/resend";
 import { Children, useEffect, useRef, useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 import { transition } from "three/examples/jsm/tsl/display/TransitionNode.js";
-import { useAnimation, useScroll, useTransform } from "motion/react";
+import { useAnimation, useScroll, useTransform, MotionValue } from "motion/react";
 
 
 export default function Home() {
@@ -659,7 +659,7 @@ export default function Home() {
         {Err_E && <p className="text-red-500 -mt-3 ">{Err_E}</p>}
         <input type="text" placeholder="Subject" id="subject" name="subject" autoComplete="subject" className="border-b-2 w-[700px] placeholder:text-[18px] placeholder:text-black py-2" value={subject} onChange={(e) => setSubject(e.target.value)}/>
         {Err_S && <p className="text-red-500 -mt-3 ">{Err_S}</p>}
-        <textarea placeholder="Your message" rows="4" id="message" name="message" autoComplete="message" className="border-b-2 w-[700px] placeholder:text-[18px] placeholder:text-black" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+        <textarea placeholder="Your message" rows={4} id="message" name="message" autoComplete="message" className="border-b-2 w-[700px] placeholder:text-[18px] placeholder:text-black" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
         {Err_M && <p className="text-red-500 -mt-3 ">{Err_M}</p>}
         <form onSubmit={send} className="mt-5 mb-2">
           <Toaster position="bottom-right" reverseOrder={false} />
