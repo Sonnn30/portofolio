@@ -90,19 +90,19 @@ export default function Contact(){
             <div className="w-full h-full -mt-10 justify-center hidden lg:flex">
                 <Models/>
             </div>
-            <div className="flex flex-col  space-y-5 mb-20 ">
+            <div className="flex flex-col items-center lg:items-start space-y-5 mb-20 ">
                 <h1 className="flex justify-center lg:justify-start font-nunito font-bold text-black text-[32px] mb-20">Contact</h1>
                 <input type="text" placeholder="Your name" id="name" name="name"autoComplete="name" className="border-b-2 w-[200px] sm:w-[500px] xl:w-[700px] placeholder:text-[18px] placeholder:text-black py-2" value={name} onChange={(e) => setName(e.target.value)}/>
                 {Err_N && <p className="text-red-500 -mt-3 ">{Err_N}</p>}
-                <input type="text" placeholder="Your email" id="email" name="email" autoComplete="email" className="border-b-2  w-[200px] sm:w-[500px] xl:w-[700px] placeholder:text-[18px] placeholder:text-black py-2" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                <input type="text" placeholder="Your email" id="email" name="email" autoComplete="email" className="border-b-2  w-[200px] sm:w-[500px] xl:w-[700px] placeholder:text-[18px] placeholder:text-black py-1" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 {Err_E && <p className="text-red-500 -mt-3 ">{Err_E}</p>}
                 <input type="text" placeholder="Subject" id="subject" name="subject" autoComplete="subject" className="border-b-2  w-[200px] sm:w-[500px] xl:w-[700px] placeholder:text-[18px] placeholder:text-black py-2" value={subject} onChange={(e) => setSubject(e.target.value)}/>
                 {Err_S && <p className="text-red-500 -mt-3 ">{Err_S}</p>}
                 <textarea placeholder="Your message" rows={4} id="message" name="message" autoComplete="message" className="border-b-2  w-[200px] sm:w-[500px] xl:w-[700px] placeholder:text-[18px] placeholder:text-black" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                 {Err_M && <p className="text-red-500 -mt-3">{Err_M}</p>}
-                <form onSubmit={send} className="flex justify-center lg:justify-start mt-5">
+                <form onSubmit={send} className="flex justify-center mt-3">
                 <Toaster position="bottom-right" reverseOrder={false} />
-                <button className="flex justify-center bg-black text-[#F1EFEC] w-[120px] h-[50px] items-center gap-2 text-[22px] rounded-2xl hover:cursor-pointer">
+                <button className="flex justify-center bg-black text-[#F1EFEC] w-[120px] h-[50px] items-center gap-2 text-[21px] rounded-2xl hover:cursor-pointer">
                     <Image src="/email.png" alt="email" width={18} height={18} className="self-center"/>
                     Send
                 </button>

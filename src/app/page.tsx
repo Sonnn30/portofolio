@@ -150,7 +150,9 @@ export default function Home() {
       <Projects/>
     </div>
     <div id="contact" className="flex justify-between bg-[#F1EFEC] w-full h-[655px] pt-10 lg:pt-30 px-10 gap-10">
-      <Contact/>
+      <div className="flex justify-center w-full">
+        <Contact/>
+      </div>
     </div>
     </>
   );
