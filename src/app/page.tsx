@@ -38,13 +38,6 @@ export default function Home() {
       }
     }, [])
 
-  const controls = useAnimation();
-    useEffect(() => {
-      controls.start({
-        scale: [1, 1.3, 1],
-        transition: { ease: "easeInOut", duration: 4, repeat: Infinity },
-      });
-    }, [controls]);
 
   return (
     <>
@@ -53,11 +46,11 @@ export default function Home() {
         {/* Text Section */}
         <div className="order-2 lg:order-1 flex flex-col items-center text-center lg:pl-20 xl:pl-0 lg:text-start lg:items-start">
           <h3 className="font-nsimsun text-[18px] lg:text-[36px]">Wilson Prajnawira</h3>
-          <h1 className="lg:text-[64px] font-bold lg:w-[512px]">Front End Developer</h1>
+          <h1 className="lg:text-[64px] font-bold lg:w-[512px]">AI Engineer</h1>
           <p className="text-[15px] px-10 lg:px-0 lg:text-[22px] lg:w-[613px] mt-5">
-            Computer Science student at BINUS University with a passion for
-            crafting modern, user-focused front-end experiences and developing
-            innovative AI-driven solutions.
+            Computer Science student at BINUS University specializing in AI, 
+            with interests in scalable systems, deep learning solutions, and front-end development 
+            to integrate AI into user-friendly applications
           </p>
           <a href="#contact">
             <button className="border-2 border-[#D4C9BE] text-[#D4C9BE] lg:text-[24px] rounded-4xl px-5 py-3 mt-7 hover:cursor-pointer hover:border-white transition duration-500 hover:text-white">
@@ -77,69 +70,70 @@ export default function Home() {
             className="w-[550px] h-auto"
           />
         </div>
-        {isLarge ? 
+{isLarge && (
         <motion.svg
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            viewBox="0 0 800 800"
-            opacity="0.67"
-            className="absolute top-0 right-0 left-0 w-[800px] z-[-10] "
-            initial={{x: 0, y:0}}
-            animate={controls}
-            style={{
-              x: mousePosition.x - 400,
-              y: Math.min(mousePosition.y - 400, 100)
-            }}
-          >
-            <defs>
-              <filter
-                id="bbblurry-filter"
-                x="-100%"
-                y="-100%"
-                width="400%"
-                height="400%"
-                filterUnits="objectBoundingBox"
-                primitiveUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB"
-              >
-                <feGaussianBlur
-                  stdDeviation="60"
-                  x="0%"
-                  y="0%"
-                  width="100%"
-                  height="100%"
-                  in="SourceGraphic"
-                  edgeMode="none"
-                  result="blur"
-                />
-              </filter>
-            </defs>
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          viewBox="0 0 800 800"
+          opacity="0.67"
+          className="absolute top-0 right-0 left-0 w-[800px] z-[-10]"
+          initial={{x: mousePosition.x - 400, y: Math.min(mousePosition.y - 400, 100)}}
+          animate={{
+            scale: [1, 1.3, 1],
+            x: mousePosition.x - 400,
+            y: Math.min(mousePosition.y - 400, 100),
+            transition: { ease: "easeInOut", duration: 4, repeat: Infinity },
+          }}
+        >
+          <defs>
+            <filter
+              id="bbblurry-filter"
+              x="-100%"
+              y="-100%"
+              width="400%"
+              height="400%"
+              filterUnits="objectBoundingBox"
+              primitiveUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feGaussianBlur
+                stdDeviation="60"
+                x="0%"
+                y="0%"
+                width="100%"
+                height="100%"
+                in="SourceGraphic"
+                edgeMode="none"
+                result="blur"
+              />
+            </filter>
+          </defs>
 
-            <g filter="url(#bbblurry-filter)">
-              <ellipse
-                rx="92.5"
-                ry="93"
-                cx="392.0801408278692"
-                cy="349.66581913107495"
-                fill="hsla(0, 0%, 100%, 1)"
-              />
-              <ellipse
-                rx="92.5"
-                ry="93"
-                cx="311.93226896291753"
-                cy="457.71253234738685"
-                fill="hsla(212, 72%, 59%, 1)" 
-              />
-              <ellipse
-                rx="92.5"
-                ry="93"
-                cx="462.5644222021821"
-                cy="465.1023500966595"
-                fill="rgba(253,245,170,1)"
-              />
-            </g>
-          </motion.svg> : ""
-      }
+          <g filter="url(#bbblurry-filter)">
+            <ellipse
+              rx="92.5"
+              ry="93"
+              cx="392.0801408278692"
+              cy="349.66581913107495"
+              fill="hsla(0, 0%, 100%, 1)"
+            />
+            <ellipse
+              rx="92.5"
+              ry="93"
+              cx="311.93226896291753"
+              cy="457.71253234738685"
+              fill="hsla(212, 72%, 59%, 1)" 
+            />
+            <ellipse
+              rx="92.5"
+              ry="93"
+              cx="462.5644222021821"
+              cy="465.1023500966595"
+              fill="rgba(253,245,170,1)"
+            />
+          </g>
+        </motion.svg>
+      )}
           
 
     </div>
@@ -157,5 +151,3 @@ export default function Home() {
     </>
   );
 }
-
-

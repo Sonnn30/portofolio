@@ -21,10 +21,11 @@ export default function About(){
         offset: ["start 0.9", "start 0.45"],
     });
 
-    const value = `Hi there! 👋 I’m Wilson Prajnawira, Computer Science student at BINUS University with a passion for crafting modern, user-focused front-end experiences and developing innovative AI-driven solutions. I
-    specialize in React, Tailwind CSS, and Next.js, creating clean, responsive, and engaging interfaces that deliver seamless user experiences. Beyond coding, I explore new technologies, ranging from web-based AI assistants to machine
-    learning projects to bring ideas to life and solve real-world problems. My approach blends creativity, problem-solving, and adaptability, enabling me to deliver impactful and future-ready solutions. I’m always open to exciting projects
-    and collaborations that push boundaries, so feel free to reach out! 🚀`;
+    const value = `Hi there! 👋 I’m Wilson Prajnawira, Computer Science student at BINUS University specializing in Artificial Intelligence. 
+    I’m passionate about developing innovative AI-driven solutions, with a strong focus on deep learning, machine learning models, and scalable AI systems. 
+    I work extensively with TensorFlow and PyTorch to design, train, and deploy models . besides AI, I also have skills in front-end development with  React, Tailwind CSS, and Next.js, 
+    enabling me to build clean, responsive, and user-friendly interfaces that can integrate it with intelligent systems. I’m always open to exciting projects and collaborations that push boundaries, 
+    so feel free to reach out! 🚀`;
 
     const wordArray = value.split(" ");
 
@@ -71,7 +72,7 @@ export default function About(){
             viewBox="0 0 456 316"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute w-[90px] ml-7 mt-2 lg:ml-24 lg:mt-9 lg:w-[456px] lg:h-[316px]"
+            className="absolute w-[90px] ml-7 mt-2 lg:ml-24 lg:mt-8 lg:w-[456px] lg:h-[316px]"
             >
             <path
                 d="M455 315C331.74 153.386 251.012 48.075 1 1"
