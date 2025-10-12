@@ -9,16 +9,16 @@ export default function Projects(){
 
     return(
         <>
-        <h1 className="flex justify-center lg:justify-start font-bold text-[20px] lg:text-[64px] mb-8 lg:mb-15">Recent Projects</h1>
+        <h1 className="flex justify-center lg:justify-start font-bold text-[20px] sm:text-[32px] lg:text-[64px] mb-8 lg:mb-15">Recent Projects</h1>
         <div className="flex flex-col items-center gap-4">
-            <div className="bg-[#34699A] flex justify-between w-[270px] h-[200px] lg:w-[935px] lg:h-[478px] rounded-xl lg:rounded-2xl pt-15 lg:pt-[102.5px] lg:mb-10 gap-1 lg:gap-0">
+            <div className="bg-[#34699A] flex justify-between w-[350px] h-[190px] sm:w-[500px] sm:h-[260px] lg:w-[935px] lg:h-[478px] rounded-xl lg:rounded-2xl pt-10 sm:pt-15 lg:pt-[102.5px] lg:mb-10 gap-1 lg:gap-0">
                 <div className="ml-2 lg:ml-10">
-                <h2 className="text-[18px] lg:text-[48px] font-bold">Waste Wise</h2>
-                <p className="text-[6px] lg:text-[12px] w-[120px] lg:w-[313px] mt-1 lg:mt-3">A platform that combines educational recycling videos with an interactive community forum, empowering people to learn, share, and take action towards a more sustainable future.</p>
-                <h3 className="text-[8px] lg:text-[15px] w-[100px] lg:w-[241px] mt-2 lg:mt-3">React JS, No SQL db, Tailwind CSS,  and Express JS</h3>
+                <h2 className="text-[18px] sm:text-[32px] lg:text-[48px] font-bold">Waste Wise</h2>
+                <p className="text-[6px] sm:text-[8px] lg:text-[12px] w-[120px] sm:w-[220px] lg:w-[313px] mt-1 sm:mt-2 lg:mt-3">A platform that combines educational recycling videos with an interactive community forum, empowering people to learn, share, and take action towards a more sustainable future.</p>
+                <h3 className="text-[8px] sm:text[12px] lg:text-[15px] w-[100px] sm:w-[200px] lg:w-[241px] mt-2 sm:mt-3 lg:mt-3">React JS, No SQL db, Tailwind CSS, and Express JS</h3>
                 </div>
                 <div className="flex justify-center items-center hover:brightness-50 duration-300" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
-                <Image src="/wastewise.png" alt="wastewise" width={543} height={375} className="w-[150px] h-[140px] lg:w-[543px] lg:h-[375px] rounded-xl lg:rounded-2xl"/>
+                <Image src="/wastewise.png" alt="wastewise" width={543} height={375} className="w-[200px] h-[150px] sm:w-[250px] sm:h-[200px] lg:w-[543px] lg:h-[375px] rounded-xl lg:rounded-2xl"/>
                 {isHover ? 
                 <div className="absolute flex justify-between gap-3">
                     <a href="https://github.com/Sonnn30">
@@ -32,14 +32,14 @@ export default function Projects(){
                 </div>
             </div>
 
-            <div className="bg-[#34699A] flex justify-between w-[270px] h-[200px] lg:w-[935px] lg:h-[478px] rounded-xl lg:rounded-2xl pt-15 lg:pt-[102.5px] lg:mb-10 gap-1 lg:gap-0">
+            <div className="bg-[#34699A] flex justify-between w-[350px] h-[190px] sm:w-[500px] sm:h-[260px] lg:w-[935px] lg:h-[478px] rounded-xl lg:rounded-2xl pt-10 sm:pt-15 lg:pt-[102.5px] lg:mb-10 gap-1 lg:gap-0">
                 <div className="ml-2 lg:ml-10">
-                <h2 className="text-[18px] lg:text-[48px] font-bold">Hishot 2025</h2>
-                <p className="text-[6px] lg:text-[12px] w-[120px] lg:w-[313px] mt-1 lg:mt-3">A website providing event details for HISHOT 2025, featuring information on workshops and seminars.</p>
-                <h3 className="text-[8px] lg:text-[15px] w-[100px] lg:w-[241px] mt-2 lg:mt-3">React JS, and Tailwind CSS</h3>
+                <h2 className="text-[18px] sm:text-[32px] lg:text-[48px] font-bold">Hishot 2025</h2>
+                <p className="text-[6px] sm:text-[8px] lg:text-[12px] w-[120px] sm:w-[220px] lg:w-[313px] mt-1 sm:mt-2 lg:mt-3">A website providing event details for HISHOT 2025, featuring information on workshops and seminars.</p>
+                <h3 className="text-[8px] sm:text[12px] lg:text-[15px] w-[100px] sm:w-[200px] lg:w-[241px] mt-2 sm:mt-3 lg:mt-3">React JS, and Tailwind CSS</h3>
                 </div>
                 <div className="flex justify-center items-center hover:brightness-70 duration-300" onMouseEnter={() => setIsHover2(true)} onMouseLeave={() => setIsHover2(false)}>
-                <Image src="/hishot.png" alt="hishot" width={426} height={290} className="w-[150px] h-[140px] lg:w-[543px] lg:h-[375px] rounded-xl lg:rounded-2xl"/>
+                <Image src="/hishot.png" alt="hishot" width={426} height={290} className="w-[200px] h-[150px] sm:w-[250px] sm:h-[200px] lg:w-[543px] lg:h-[375px] rounded-xl lg:rounded-2xl"/>
                     {isHover2 ? 
                     <div className="absolute flex justify-between gap-3">
                     <a href="https://github.com/Sonnn30">

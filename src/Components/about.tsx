@@ -65,8 +65,8 @@ export default function About(){
                 </motion.p>
             </div>
       </div>
-      <div className="flex justify-between mt-30 lg:-mx-23 sm:mx-10">
-        <div className="absolute hidden [@media(width:280px)]:block 2xl:block">
+      <div className="flex justify-between mt-30 mx-10 lg:-mx-23 sm:mx-10">
+        <div className="absolute hidden [@media(width:100px)]:block 2xl:block">
         {/* Penghubung kiri */}
             <svg
             viewBox="0 0 456 316"

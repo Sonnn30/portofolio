@@ -14,7 +14,7 @@ export default function Home() {
     const [isLarge, setIsLarge] = useState(false);
 
     useEffect(() => {
-      const handleResize = () => setIsLarge(window.innerWidth >= 1024); 
+      const handleResize = () => setIsLarge(window.innerWidth >= 1536); 
       handleResize(); 
       window.addEventListener("resize", handleResize);
       return () => window.removeEventListener("resize", handleResize);
@@ -42,11 +42,11 @@ export default function Home() {
   return (
     <>
     <Navbar/>
-    <div className="flex flex-col items-center mt-30 lg:flex-row lg:justify-around text-white lg:gap-25 2xl:mb-20 2xl:mt-60 2xl:mx-50">
+    <div className="flex flex-col items-center mt-30 2xl:flex-row 2xl:justify-around text-white 2xl:gap-25 2xl:mb-20 2xl:mt-60 2xl:mx-50">
         {/* Text Section */}
-        <div className="order-2 lg:order-1 flex flex-col items-center text-center lg:pl-20 xl:pl-0 lg:text-start lg:items-start">
+        <div className="order-2 2xl:order-1 flex flex-col items-center text-center 2xl:text-start 2xl:items-start">
           <h3 className="font-nsimsun text-[18px] lg:text-[36px]">Wilson Prajnawira</h3>
-          <h1 className="lg:text-[64px] font-bold lg:w-[512px]">AI Engineer</h1>
+          <h1 className="lg:text-[64px] font-bold lg:w-full">Computer Science</h1>
           <p className="text-[15px] px-10 lg:px-0 lg:text-[22px] lg:w-[613px] mt-5">
             Computer Science student at BINUS University specializing in AI, 
             with interests in scalable systems, deep learning solutions, and front-end development 
@@ -60,7 +60,7 @@ export default function Home() {
         </div>
 
         {/* Image Section */}
-        <div className="w-[200px] lg:w-full lg:-mt-15 lg:-mr-40 lg:order-2 order-1">
+        <div className="w-[200px] 2xl:w-full 2xl:-mt-15 2xl:-mr-40 2xl:order-2 order-1">
           <Image
             src="/pp.png"
             alt="pp"
