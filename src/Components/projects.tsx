@@ -72,6 +72,26 @@ export default function Projects(){
                     : "" }
                 </div>
             </div>
+            <div className="bg-[#34699A] flex justify-between w-[350px] h-[190px] sm:w-[500px] sm:h-[260px] lg:w-[935px] lg:h-[478px] rounded-xl lg:rounded-2xl pt-10 sm:pt-15 lg:pt-[102.5px] lg:mb-10 gap-1 lg:gap-0">
+                <div className="ml-2 lg:ml-10 flex flex-col items-start gap-2">
+                <h2 className="text-[18px] sm:text-[32px] lg:text-[48px] font-bold">TrashClassifier</h2>
+                <p className="text-[6px] sm:text-[8px] lg:text-[12px] w-[120px] sm:w-[220px] lg:w-[313px] mt-1 sm:mt-2 lg:mt-3">A ResNet50-based deep learning model that classifies waste materials from images using a simple Gradio web interface</p>
+                <h3 className="text-[8px] sm:text[12px] lg:text-[15px] w-[100px] sm:w-[200px] lg:w-[241px] mt-2 sm:mt-3 lg:mt-3 font-semibold">RestNet50, Tensorflow, Gradio</h3>
+                </div>
+                <div className="flex justify-center items-center hover:brightness-70 duration-300" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
+                <Image src="/TrashClassifier.png" alt="hishot" width={426} height={290} className="w-[200px] h-[150px] sm:w-[250px] sm:h-[200px] lg:w-[543px] lg:h-[375px] rounded-xl lg:rounded-2xl"/>
+                    {isHover ? 
+                    <div className="absolute flex justify-between gap-3">
+                    <a href="https://huggingface.co/spaces/Wilsonnnnn30/TrashClassification/tree/main">
+                        <Image src="/github.png" alt="github" width={50} height={50} className="w-[20px] h-[20px] lg:w-[50px] lg:h-[50px]"/>
+                    </a>
+                    <a href="https://huggingface.co/spaces/Wilsonnnnn30/TrashClassification">
+                        <Image src="/linkP.png" alt="link" width={50} height={50} className="w-[20px] h-[20px] lg:w-[50px] lg:h-[50px]"/>
+                    </a>
+                    </div>
+                    : "" }
+                </div>
+            </div>
         </div>
         <a href="/CV.pdf" download="WilsonPrajnawiraV.pdf">
         <div className="flex justify-center mt-20 mb-20 lg:mb-40 lg:mt-60">
