@@ -6,6 +6,7 @@ import { useState } from "react";
 export default function Projects(){
   const [isHover, setIsHover] = useState(false);
   const [isHover2, setIsHover2] = useState(false);
+  const [isHover3, setIsHover3] = useState(false);
 
     return(
         <>
@@ -78,9 +79,9 @@ export default function Projects(){
                 <p className="text-[6px] sm:text-[8px] lg:text-[12px] w-[120px] sm:w-[220px] lg:w-[313px] mt-1 sm:mt-2 lg:mt-3">A ResNet50-based deep learning model that classifies waste materials from images using a simple Gradio web interface</p>
                 <h3 className="text-[8px] sm:text[12px] lg:text-[15px] w-[100px] sm:w-[200px] lg:w-[241px] mt-2 sm:mt-3 lg:mt-3 font-semibold">RestNet50, Tensorflow, Gradio</h3>
                 </div>
-                <div className="flex justify-center items-center hover:brightness-70 duration-300" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
+                <div className="flex justify-center items-center hover:brightness-70 duration-300" onMouseEnter={() => setIsHover3(true)} onMouseLeave={() => setIsHover3(false)}>
                 <Image src="/TrashClassifier.png" alt="hishot" width={426} height={290} className="w-[200px] h-[150px] sm:w-[250px] sm:h-[200px] lg:w-[543px] lg:h-[375px] rounded-xl lg:rounded-2xl"/>
-                    {isHover ? 
+                    {isHover3 ? 
                     <div className="absolute flex justify-between gap-3">
                     <a href="https://huggingface.co/spaces/Wilsonnnnn30/TrashClassification/tree/main">
                         <Image src="/github.png" alt="github" width={50} height={50} className="w-[20px] h-[20px] lg:w-[50px] lg:h-[50px]"/>
