@@ -53,19 +53,19 @@ export default function Chatbot(){
                 animate={{ y: 0, scale: 1}}
                 exit={{ y: 50, scale: 0.5 }}
                 transition={{ duration: 0.1 }}
-                className="fixed flex flex-col items-center bottom-10 right-1.5 sm:right-10 z-50 w-[340px] sm:w-[400px] h-[500px] bg-[#CFE7FF] gap-1 rounded-2xl">
+                className="fixed flex flex-col items-center bottom-10 right-3 sm:right-10 z-50 w-[350px] sm:w-[400px] h-[500px] bg-[#CFE7FF] gap-1 rounded-2xl">
                     <div className="absolute flex justify-center bg-[#34699A] rounded-full p-2 shadow-xl/12 mt-3">
                         <Image src="/chatbot.svg" alt="logo" width={30} height={30}/>
                     </div>
                     <div className="absolute right-4 top-2 hover:cursor-pointer" onClick={() => setIsHide(!isHide)}>
                         <Image src="/cancel.png" alt="cancel" width={25} height={25}/>
                     </div>
-                    <div className="bg-white flex flex-col items-center w-[385px] h-[140px] gap-1 mt-9 rounded-lg text-[18px]">
+                    <div className="bg-white flex flex-col items-center w-[98%] h-[140px] gap-1 mt-9 rounded-lg text-[18px]">
                         <p className="mt-10 font-semibold">Welcome!</p>
                         <p className="text-center">What information would you like <br />to know about Wilson?</p>
                     </div>
 
-                    <div className="bg-white flex flex-col w-[385px] h-[325px] mb-1.5 rounded-lg shadow-lg">
+                    <div className="bg-white flex flex-col w-[98%] h-[325px] mb-1.5 rounded-lg shadow-lg">
                         <div className="flex-1 overflow-y-auto p-3 flex flex-col gap-3 scroll-smooth custom-scrollbar">
                             {messages.map((msg, index) => (
                             <div
