@@ -16,3 +16,28 @@ body{
 html {
   scroll-behavior: smooth;
 }
+
+/* Menargetkan scrollbar untuk Chrome, Safari, dan Edge */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Lebar scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Warna latar belakang scrollbar */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #65A0D8; /* Warna scrollbar kamu (sesuaikan dengan tema blue-mu) */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #4a8bc7; /* Warna saat di-hover */
+}
+
+/* Dukungan untuk Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #65A0D8 #f1f1f1;
+}

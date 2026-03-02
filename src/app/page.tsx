@@ -8,6 +8,7 @@ import Image from "next/image";
 import About from "@/Components/about";
 import Projects from "@/Components/projects";
 import Contact from "@/Components/contact";
+import Chatbot from "@/Components/chatbot";
 
 
 export default function Home() {
@@ -148,6 +149,7 @@ export default function Home() {
         <Contact/>
       </div>
     </div>
+    <Chatbot/>
     </>
   );
 }
