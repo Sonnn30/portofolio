@@ -53,7 +53,7 @@ export default function Chatbot(){
                 animate={{ y: 0, scale: 1}}
                 exit={{ y: 50, scale: 0.5 }}
                 transition={{ duration: 0.1 }}
-                className="fixed flex flex-col items-center bottom-10 right-3 sm:right-10 z-50 w-[350px] sm:w-[400px] h-[500px] bg-[#CFE7FF] gap-1 rounded-2xl">
+                className="fixed flex flex-col items-center bottom-10 left-1/2 -translate-x-1/2 sm:left-auto sm:-translate-x-0 sm:right-10 z-50 w-[350px] sm:w-[400px] h-[500px] bg-[#CFE7FF] gap-1 rounded-2xl">
                     <div className="absolute flex justify-center bg-[#34699A] rounded-full p-2 shadow-xl/12 mt-3">
                         <Image src="/chatbot.svg" alt="logo" width={30} height={30}/>
                     </div>
