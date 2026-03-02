@@ -2,7 +2,7 @@ import Image from "next/image";
 import {motion, AnimatePresence} from "motion/react";
 import { useState, useRef, useEffect} from "react";
 
-export default function chatbot(){
+export default function Chatbot(){
     const [isHide, setIsHide] = useState(false);
     const [input, setInput] = useState('');
     const [messages, setMessages] = useState([
