@@ -111,13 +111,14 @@ export default function Chatbot(){
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0, opacity: 0 }}
-                className="flex fixed bottom-10 right-10 z-50 hover:cursor-pointer" onClick={() =>setIsHide(true)}>
+                className="flex fixed bottom-5 right-5 sm:bottom-10 sm:right-10 z-50 hover:cursor-pointer" onClick={() =>setIsHide(true)}>
                     <div className="bg-[#34699A] rounded-full p-3">
                         <Image
                             src="/chatbot.svg"
                             alt="chatbot"
                             width={50}
                             height={50}
+                            className="w-[28px] h-[28px] sm:w-[50px] sm:h-[50px]"
                         />
                     </div>
                 </motion.div>
